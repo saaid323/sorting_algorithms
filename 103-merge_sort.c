@@ -7,8 +7,10 @@
  * @left_size: size of left array
  * @right: array of integers
  * @right_size: size of right array
+ * @size: size of array
  */
-void merge(int *array, int *left, int left_size, int *right, int right_size, size_t size)
+void merge(int *array, int *left, int left_size, int *right, int right_size,
+		size_t size)
 {
 	int i = 0, j = 0, k = 0;
 
@@ -41,7 +43,7 @@ void merge(int *array, int *left, int left_size, int *right, int right_size, siz
 }
 
 /**
- * merge_sort: sorts an array of integers in ascending order using
+ * merge_sort - sorts an array of integers in ascending order using
  * the Merge sort algorithm
  * @array: array of integers
  * @size: size of array
