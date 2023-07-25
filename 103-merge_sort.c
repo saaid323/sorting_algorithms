@@ -15,7 +15,7 @@ void merge(int *array, int *left, int left_size, int *right, int right_size, siz
 	printf("Merging...\n");
 	printf("[left]: ");
 	print_array(left, left_size);
-	printf("[right]: ");
+	printf("[right: ");
 	print_array(right, right_size);
 	while (i < left_size && j < right_size)
 	{
@@ -36,7 +36,7 @@ void merge(int *array, int *left, int left_size, int *right, int right_size, siz
 	{
 		array[k++] = right[j++];
 	}
-	printf("Done: ");
+	printf("[Done]: ");
 	print_array(array, size);
 }
 
